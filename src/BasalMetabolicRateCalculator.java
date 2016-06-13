@@ -15,7 +15,7 @@ public class BasalMetabolicRateCalculator {
 			+ " bmr based on the height, age and weight that you input.\nPlease be sure to input"
 			+ " your accurate weight, age and height.\n");
 	System.out.println("Please enter your age:");
-	
+	//get user input for age
 	double age = Validator.readValidInt();	
 	
 	// request user input of height and weight
