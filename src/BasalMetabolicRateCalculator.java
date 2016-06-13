@@ -24,7 +24,10 @@ public class BasalMetabolicRateCalculator {
 			
 			//
 		System.out.println("Please enter your weight in pounds:");
-			double weight = Validator.readValidInt();	
+			double weight = Validator.readValidInt();
+			
+			int bmr =  655 + ( 4.35 x weight ) + ( 4.7 x height ) - ( 4.7 x age)
+
 		
 		
 	
