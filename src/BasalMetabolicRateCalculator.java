@@ -34,9 +34,17 @@ public class BasalMetabolicRateCalculator {
 			
 			double bmr =  (655 + ( weight * 4.35 ) + (height * 4.7 ) - ( age * 4.7));
 
-		System.out.println("Your BMR is"+bmr+".");
+		System.out.println("Well ma'am, your BMR is "+bmr+". That's the number of calories your body needs just to fuel"
+				+ " itself for involuntary needs \nsuch as\nheart, digestion, kidney, brain and other organ function.");
+			}
+			else if (gender.equalsIgnoreCase("male") ) {
+				double bmr =  (66 + ( weight * 6.23 ) + (height * 12.7 ) - ( age * 6.8));
+				System.out.println("Well sir, your BMR is "+bmr+". That's the number of calories your body needs just to fuel"
+						+ " itself for involuntary needs \nsuch as heart, digestion, kidney, brain and other organ function.");
+					}
+				
 			}
 	
 	}
 
-}
+
