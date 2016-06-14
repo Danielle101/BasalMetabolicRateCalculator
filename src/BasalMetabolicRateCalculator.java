@@ -14,7 +14,9 @@ public class BasalMetabolicRateCalculator {
 	System.out.println("Welcome to the Basal Metabolic RateCalculator!\n\nThis app will calculate your"
 			+ " bmr based on the gender, height, age and weight that you input.\nPlease be sure to input"
 			+ " your accurate gender, weight, age and height.\n");
-				String gender = Validator.getString("Please enter your gender:(m/f))") ;
+	
+	
+				String gender = Validator.getString("Please enter your gender (male/female?):") ;
 
 	System.out.println("Please enter your age:");
 	//get user input for age
@@ -28,10 +30,12 @@ public class BasalMetabolicRateCalculator {
 		System.out.println("Please enter your weight in pounds:");
 			double weight = Validator.readValidInt();
 			
-			int bmr =  655 + ( weight * 4.35 ) + ( 4.7 x height ) - ( 4.7 x age);
+			if (gender.equalsIgnoreCase("female") ){
+			
+			double bmr =  (655 + ( weight * 4.35 ) + (height * 4.7 ) - ( age * 4.7));
 
-		
-		
+		System.out.println("Your BMR is"+bmr+".");
+			}
 	
 	}
 
