@@ -27,10 +27,10 @@ import java.util.*;
 
 	   {
 	        s = get_String(prompt);
-	        if (s.compareTo("Y") == 0 || s.compareTo("y") == 0 || s.compareTo("N") == 0 || s.compareTo("n") == 0)
+	        if (s.compareTo("Female") == 0 || s.compareTo("female") == 0 || s.compareTo("male") == 0 || s.compareTo("Male") == 0)
 	        isValid = true;
 	        else
-	        System.out.println("\nError! You must enter 'y' or 'n'!");
+	        System.out.println("\nError! You must enter 'male' or 'female'!");
 	   }
 
 	        return s;
