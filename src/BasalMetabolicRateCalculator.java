@@ -11,12 +11,13 @@ public class BasalMetabolicRateCalculator {
 		Scanner sc = new Scanner (System.in);
 		
 		// welcome the user to the app
-	System.out.println("Welcome to the Basal Metabolic RateCalculator!\n\nThis app will calculate your"
-			+ " bmr based on the gender, height, age and weight that you input.\nPlease be sure to input"
-			+ " your accurate gender, weight, age and height.\n");
+	System.out.println("Welcome to the Basal Metabolic RateCalculator!\n"
+			+"\nBasal metabolic rate (BMR) is the amount of energy expended while at rest in a neutrally temperate\n"
+			+ "environment, in the post-absorptive state (meaning that the digestive system is inactive, which requires \nabout twelve hours of fasting)."
+			+ " \n\nThis app will calculate you bmr based on the gender, height, age and weight that you input.\nPlease be sure to input"
+			+ " your accurate gender, weight, age and height.");
 	
-	
-				String gender = Validator.getString("Please enter your gender (male/female?):") ;
+				String gender = Validator.getString("\nPlease enter your gender (male/female?):") ;
 
 	System.out.println("Please enter your age:");
 	//get user input for age
