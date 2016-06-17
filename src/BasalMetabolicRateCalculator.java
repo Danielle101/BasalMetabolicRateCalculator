@@ -9,6 +9,8 @@ public class BasalMetabolicRateCalculator {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner (System.in);
+		String choice = "y";
+
 		
 		// welcome the user to the app
 	System.out.println("Welcome to the Basal Metabolic RateCalculator!\n"
