@@ -19,7 +19,7 @@ public class BasalMetabolicRateCalculator {
 			+ " \n\nThis app will calculate you bmr based on the gender, height, age and weight that you input.\nPlease be sure to input"
 			+ " your accurate gender, weight, age and height.");
 	while (choice.equalsIgnoreCase("y")) {
-
+//get user input
 				String gender = Validator.getString("\nPlease enter your gender (male/female?):") ;
 
 	System.out.println("Please enter your age:");
@@ -35,13 +35,14 @@ public class BasalMetabolicRateCalculator {
 			double weight = Validator.readValidInt();
 			
 			if (gender.equalsIgnoreCase("female") ){
-			
+			//female bmr formula
 			double bmr =  (655 + ( weight * 4.35 ) + (height * 4.7 ) - ( age * 4.7));
 
 		System.out.println("Well ma'am, your BMR is "+bmr+". That's the number of calories your body needs just to fuel"
 				+ " itself for involuntary needs \nsuch as heart, digestion, kidney, brain and other organ function.");
 			}
 			else if (gender.equalsIgnoreCase("male") ) {
+				//male bmr formula
 				double bmr =  (66 + ( weight * 6.23 ) + (height * 12.7 ) - ( age * 6.8));
 				System.out.println("Well sir, your BMR is "+bmr+". That's the number of calories your body needs just to fuel"
 						+ " itself for involuntary needs \nsuch as heart, digestion, kidney, brain and other organ function.");
@@ -52,5 +53,5 @@ public class BasalMetabolicRateCalculator {
 			}
 	
 	}
-
+}
 
